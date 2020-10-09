@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AccountSubMenu</class>
+ <widget class="QWidget" name="AccountSubMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>695</width>
+    <height>497</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AccountSubMenu</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>110</y>
+     <width>221</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+    </font>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Withdraw Cash</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Deposit Cash</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Account Details</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Transfer Money</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>110</y>
+     <width>211</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+    </font>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>6</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Create Current Account</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Create Savings Account</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Modify Account</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Close Account</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>36</y>
+     <width>201</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Account Menu</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>-35</x>
+     <y>-79</y>
+     <width>901</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/guidesign/BackgroundImage.png);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_9">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>450</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>label</zorder>
+  <zorder>pushButton_9</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="bankingsystem.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountSubMenu</receiver>
+   <slot>onCreateCurrentAccountClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>485</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>347</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountSubMenu</receiver>
+   <slot>onCreateSavingAccountClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>485</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>347</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountSubMenu</receiver>
+   <slot>onWithdrawCashCLicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>146</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>202</x>
+     <y>-9</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountSubMenu</receiver>
+   <slot>onDepositCashClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>115</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>100</x>
+     <y>-3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountSubMenu</receiver>
+   <slot>onAccountDetailsClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>300</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountSubMenu</receiver>
+   <slot>onTransferMoneyClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>184</x>
+     <y>-2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountSubMenu</receiver>
+   <slot>onModifyAccountClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>578</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>551</x>
+     <y>-9</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountSubMenu</receiver>
+   <slot>onCloseAccountClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>543</x>
+     <y>361</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountSubMenu</receiver>
+   <slot>backButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>335</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>585</x>
+     <y>-13</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onCreateCurrentAccountClicked()</slot>
+  <slot>onCreateSavingAccountClicked()</slot>
+  <slot>onDepositCashClicked()</slot>
+  <slot>onWithdrawCashCLicked()</slot>
+  <slot>onAccountDetailsClicked()</slot>
+  <slot>onTransferMoneyClicked()</slot>
+  <slot>onCloseAccountClicked()</slot>
+  <slot>onModifyAccountClicked()</slot>
+  <slot>backButtonClicked()</slot>
+ </slots>
+</ui>

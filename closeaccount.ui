@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>closeAccount</class>
+ <widget class="QWidget" name="closeAccount">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>592</width>
+    <height>447</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>closeAccount</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLineEdit" name="accountNoEdit">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>200</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="accountlabel">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>200</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Account number</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="instructionlabel">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>150</y>
+     <width>271</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Please enter your account number </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeVaultButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>270</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>close account</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="heading">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>40</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Close Account</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>-5</x>
+     <y>-9</y>
+     <width>801</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/guidesign/BackgroundImage.png);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>370</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>accountNoEdit</zorder>
+  <zorder>accountlabel</zorder>
+  <zorder>instructionlabel</zorder>
+  <zorder>closeVaultButton</zorder>
+  <zorder>heading</zorder>
+  <zorder>pushButton</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="finalbankingsystem.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>closeVaultButton</sender>
+   <signal>clicked()</signal>
+   <receiver>closeAccount</receiver>
+   <slot>OnCloseAccountClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>300</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>closeAccount</receiver>
+   <slot>Back6()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OnCloseAccountClicked()</slot>
+  <slot>Back6()</slot>
+ </slots>
+</ui>

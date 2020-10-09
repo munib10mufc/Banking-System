@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManagerMenu</class>
+ <widget class="QWidget" name="ManagerMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>644</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ManagerMenu</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>130</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>MENU</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>210</y>
+     <width>271</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+    </font>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="PendingLoansButton">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Pending Loans</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="EmployeeInfoButton">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Employee Information</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ProvideIncentiveButton">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Provide Intcentives</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="LogoutBotton">
+      <property name="text">
+       <string>Logout</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>-180</x>
+     <y>-410</y>
+     <width>831</width>
+     <height>951</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/guidesign/BackgroundImage.png);</string>
+   </property>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>label</zorder>
+  <zorder>layoutWidget</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="bankingsystem.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>PendingLoansButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagerMenu</receiver>
+   <slot>PendingLoanClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>305</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>321</x>
+     <y>283</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>EmployeeInfoButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagerMenu</receiver>
+   <slot>EmployeeInfoClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>372</x>
+     <y>248</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>372</x>
+     <y>-16</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ProvideIncentiveButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagerMenu</receiver>
+   <slot>ProvideIncentiveClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>189</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>-14</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LogoutBotton</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagerMenu</receiver>
+   <slot>LogoutClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>222</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>225</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>PendingLoanClicked()</slot>
+  <slot>EmployeeInfoClicked()</slot>
+  <slot>ProvideIncentiveClicked()</slot>
+  <slot>AccountDetailClicked()</slot>
+  <slot>LogoutClicked()</slot>
+ </slots>
+</ui>

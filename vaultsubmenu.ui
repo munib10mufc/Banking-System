@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VaultSubMenu</class>
+ <widget class="QWidget" name="VaultSubMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>693</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VaultSubMenu</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>60</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Vault Menu</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>231</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+    </font>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vault Details</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Retrieve Item</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add Item</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>110</y>
+     <width>241</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+    </font>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Create Vault</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Close Vault</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>View Vault Items</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>-190</x>
+     <y>-140</y>
+     <width>1041</width>
+     <height>731</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/guidesign/BackgroundImage.png);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>450</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>label</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>pushButton</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mybankingsystem.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>VaultSubMenu</receiver>
+   <slot>createVaultClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>503</x>
+     <y>174</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>541</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>VaultSubMenu</receiver>
+   <slot>closeVaultClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>432</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>435</x>
+     <y>-11</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>VaultSubMenu</receiver>
+   <slot>addItemClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>97</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>153</x>
+     <y>-7</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>VaultSubMenu</receiver>
+   <slot>viewVaultItemsClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>631</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>604</x>
+     <y>-11</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>VaultSubMenu</receiver>
+   <slot>vaultDetailsClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>291</x>
+     <y>-4</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>VaultSubMenu</receiver>
+   <slot>retrieveItemClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>249</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>-2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>VaultSubMenu</receiver>
+   <slot>backButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>377</x>
+     <y>455</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>401</x>
+     <y>-5</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>createVaultClicked()</slot>
+  <slot>closeVaultClicked()</slot>
+  <slot>addItemClicked()</slot>
+  <slot>viewVaultItemsClicked()</slot>
+  <slot>vaultDetailsClicked()</slot>
+  <slot>retrieveItemClicked()</slot>
+  <slot>backButtonClicked()</slot>
+ </slots>
+</ui>

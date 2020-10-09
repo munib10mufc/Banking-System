@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainMenu</class>
+ <widget class="QWidget" name="mainMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>615</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>mainMenu</string>
+  </property>
+  <widget class="QPushButton" name="checkBalance_Button">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>190</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Check Balance</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="withdraw_Button">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>190</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Withdraw Amount</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="heading_lebel">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>80</y>
+     <width>341</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Please Select Your Transaction&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="changePin_Button">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>310</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Change PIN</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>withdraw_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>mainMenu</receiver>
+   <slot>withdrawClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>217</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>-17</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBalance_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>mainMenu</receiver>
+   <slot>inquireBalanceClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>421</x>
+     <y>205</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>410</x>
+     <y>-18</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>changePin_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>mainMenu</receiver>
+   <slot>changePinClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>325</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>303</x>
+     <y>-6</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>withdrawClicked()</slot>
+  <slot>changePinClicked()</slot>
+  <slot>inquireBalanceClicked()</slot>
+ </slots>
+</ui>
